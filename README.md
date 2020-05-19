@@ -1,9 +1,14 @@
+# May 2020 Notice
+
+For many games this script is not needed anymore, and may soon not be needed at all.
+
+This is largely thanks to work Guy1524 has done in officially implementing Media Foundation support into Wine. I would reccommend trying games with latest Proton-GE first, and only using this as a backup.
+
 # mf-installcab
 Installcab based Media Foundation workaround for Wine
 
 ### Known working games:
 
-- Resident Evil 3 (Mileage may vary)
 - Resident Evil 2
 - Resident Evil 7
 - Darksiders Warmastered Edition
