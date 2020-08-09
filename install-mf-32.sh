@@ -29,7 +29,7 @@ scriptdir=$(dirname "$0")
 cd "$scriptdir"
 
 if [ ! -f "windows6.1-KB976932-X86.exe" ]; then
-    wget "https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X86.exe"
+    wget "https://web.archive.org/web/20200803210804/https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X64.exe"
 fi
 
 python2 installcab.py windows6.1-KB976932-X86.exe mediafoundation
