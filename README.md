@@ -1,3 +1,7 @@
+# December 2020 Notice
+
+This may be broken with prefixes created with Proton 5.13, due to permission issues with how they symlink dll files.
+
 # May 2020 Notice
 
 For many games this script is not needed anymore, and may soon not be needed at all.
