@@ -11,14 +11,6 @@ This is largely thanks to work Guy1524 has done in officially implementing Media
 # mf-installcab
 Installcab based Media Foundation workaround for Wine
 
-### Known working games:
-
-- Resident Evil 2
-- Resident Evil 7
-- Darksiders Warmastered Edition
-- Devil May Cry 5
-- Borderlands 3
-
 Just set WINEPREFIX and run install-mf-64.sh like this
 
 `WINEPREFIX="/dev/brain/wine prefixes can be anywhere/folder" ./install-mf-64.sh`
