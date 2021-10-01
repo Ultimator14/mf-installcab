@@ -228,6 +228,8 @@ def install_dll(dll_path):
     dest_dir = get_dll_destdir(dll_path)
     file_name = os.path.basename(dll_path)
     print("- %s -> %s" % (file_name, dest_dir))
+    if os.path.islink(dest_dir + '/' + file_name):
+        os.unlink(dest_dir + '/' + file_name)
     shutil.copy(dll_path, dest_dir)
     register_dll(os.path.join(dest_dir, file_name))
 
