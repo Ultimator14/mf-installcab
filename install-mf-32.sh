@@ -28,15 +28,15 @@ set -e
 scriptdir=$(dirname "$0")
 cd "$scriptdir"
 
-if [ ! -f "windows6.1-KB976932-X86.exe" ]; then
-    wget "https://web.archive.org/web/20200803210804/https://download.microsoft.com/download/0/A/F/0AFB5316-3062-494A-AB78-7FB0D4461357/windows6.1-KB976932-X64.exe"
+if [ ! -f "windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe" ]; then
+    wget "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
 fi
 
-python2 installcab.py windows6.1-KB976932-X86.exe mediafoundation
-python2 installcab.py windows6.1-KB976932-X86.exe mf_
-python2 installcab.py windows6.1-KB976932-X86.exe mfreadwrite
-python2 installcab.py windows6.1-KB976932-X86.exe wmadmod
-python2 installcab.py windows6.1-KB976932-X86.exe wmvdecod
-python2 installcab.py windows6.1-KB976932-X86.exe wmadmod
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe mediafoundation
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe mf_
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe mfreadwrite
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe wmadmod
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe wmvdecod
+python2 installcab.py windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe wmadmod
 
 echo -e "\nNow you need to get mfplat.dll in your application directory"
