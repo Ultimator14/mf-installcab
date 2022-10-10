@@ -12,6 +12,20 @@ check_env "$WINEPREFIX" WINEPREFIX
 check_sanity "$WINEPREFIX" drive_c
 
 # User instructions:
+# Set PROTON to a Heroic Game Launcher Proton folder just like WINEPREFIX, pass -heroicproton to script. 
+# Heroic now includes a "Wine Manager" for managing wine versions. Wine versions installed using the
+# "Wine Manager" have a slightly different directory structure different than standard proton wine versions.
+if [ "$1" = "-heroicproton" ]; then
+    check_env "$PROTON" PROTON
+    check_sanity "$PROTON" files/bin
+
+    export PATH="$PROTON/files/bin:$PATH"
+    export WINESERVER="$PROTON/files/bin/wineserver"
+    export WINELOADER="$PROTON/files/bin/wine"
+    export WINEDLLPATH="$PROTON/files/lib/wine:$PROTON/files/lib64/wine"
+fi
+
+# User instructions:
 # Set PROTON to a Proton folder just like WINEPREFIX, pass -proton to script
 if [ "$1" = "-proton" ]; then
     check_env "$PROTON" PROTON
